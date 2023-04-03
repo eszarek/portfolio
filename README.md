@@ -1,4 +1,4 @@
-# Foobar
+# Portfolio
 
 ### Description / Purpose:
 This is a single-page portfolio website that showcases my programming and design skills. The website is built using PHP, HTML, and JavaScript.
