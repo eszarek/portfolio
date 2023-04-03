@@ -2,7 +2,7 @@
 
 require_once "connect.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    var_dump($_POST);
+
     $email = trim (strtolower ($_POST['email']));
 
     $name = trim($_POST['name']);
