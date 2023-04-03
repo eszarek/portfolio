@@ -82,9 +82,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
       </nav>
 
       <div class="follow">
-         <a href="#" class="fab fa-facebook-f"></a>
-         <a href="#" class="fab fa-twitter"></a>
-         <a href="#" class="fab fa-instagram"></a>
+<!--         <a href="#" class="fab fa-facebook-f"></a>-->
+<!--         <a href="#" class="fab fa-twitter"></a>-->
+<!--         <a href="#" class="fab fa-instagram"></a>-->
          <a href="https://www.linkedin.com/in/erinnszarek/" class="fab fa-linkedin"></a>
          <a href="https://github.com/eszarek" class="fab fa-github"></a>
       </div>
