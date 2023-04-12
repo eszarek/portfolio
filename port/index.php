@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/background.css">
     <script src="https://cdn.jsdelivr.net/npm/github-repo-cards@1.0.9/app.js" defer></script>
 
 
@@ -96,9 +97,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
    <!-- home section starts  -->
 
    <section class="home" id="home">
+       <div id="hex">
+           <!-- PARTICLES -->
+           <canvas id="particles"></canvas>
 
+           <!-- HEXAGON GRID -->
+           <div id="hexagonGrid"></div>
+
+       </div>
       <div class="image" data-aos="fade-right">
-         <img src="images/Erinn_Szarek.jpg" alt="Erinn Szarek">
+         <img class="avatar" src="images/Erinn_Szarek.jpg" alt="Erinn Szarek">
       </div>
 
       <div class="content">
@@ -423,6 +431,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
    <div class="credit"> &copy; copyright @
       <?php echo date('Y'); ?> by <span>Erinn Szarek</span>
    </div>
+
+   <!--interactive background.js -->
+   <script type="text/javascript" src="js/bkg.js"></script>
 
 
 

@@ -15,7 +15,7 @@
    box-sizing: border-box;
    outline: none; border:none;
    text-decoration: none;
-   text-transform: capitalize;
+   /*text-transform: capitalize; */
    color:var(--black);
 }
 
@@ -183,9 +183,11 @@ section{
 }
 
 .home .image img{
-   height: 65rem;
+   height: 25rem;
+   margin: 10px;
+   border:.5rem solid black;
+   border-radius: 500px;
    padding:2rem;
-   border:var(--border-bold);
 }
 
 .home .content{

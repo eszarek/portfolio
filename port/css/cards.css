@@ -42,7 +42,7 @@ section.github-repo-cards div.github-repo-card p.desc {
     font-size: 12px;
     margin-bottom: 16px;
     margin-top: 8px;
-    color: #4488cb;
+    color: #0d2e4d;
 }
 
 section.github-repo-cards div.github-repo-card svg {
@@ -58,7 +58,7 @@ section.github-repo-cards div.github-repo-card div.forks-stars-lang {
 }
 
 section.github-repo-cards div.github-repo-card div.forks-stars-lang p.lang {
-    color: #006b6b;
+    color: #0e0e0e;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -90,11 +90,11 @@ section.github-repo-cards div.github-repo-card div.forks-stars-lang a.stars-fork
 }
 
 section.github-repo-cards div.github-repo-card div.forks-stars-lang a.stars-forks:hover span {
-    color: #4e9fff;
+    color: #0e0e0e;
 }
 
 section.github-repo-cards div.github-repo-card div.forks-stars-lang a.stars-forks:hover svg {
-    fill: #4e9fff;
+    fill: #0b1928;
 }
 
 @media (max-width: 1850px) {
