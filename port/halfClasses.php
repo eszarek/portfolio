@@ -26,10 +26,10 @@ if(empty($result)){
 
             </tr>
   ';
-
-    foreach ($result as $row){
-        ?>
-        <?php if (!empty($row['CDescription'])) { ?>
+    for ($i = 0; $i < $count/2; $i++) {
+        // Process the row
+        $row = $result[$i];
+        if (!empty($row['CDescription'])) { ?>
 
             <tr onClick='toggleRow(this)'>
                 <td id="underlineHeading">
@@ -39,14 +39,14 @@ if(empty($result)){
                 </td>
                 <td >
 
-                        <?php echo $row['CName'];?>
+                    <?php echo $row['CName'];?>
 
                 </td >
 
 
                 <td class='expanded-row-content hide-row' ">
 
-                        <?php echo $row['CDescription'];?>
+                <?php echo $row['CDescription'];?>
 
                 </td>
             </tr>

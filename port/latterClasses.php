@@ -19,6 +19,7 @@ if(empty($result)){
     echo "<p class='error'>Nothing found, please try again. <a href='index.php'>Return to Home</a></p>";
 }else {
     echo '<div id=\"allClasses\">
+
   <table>
   <tr>
                 <th>Class Number</th>
@@ -26,10 +27,10 @@ if(empty($result)){
 
             </tr>
   ';
-
-    foreach ($result as $row){
-        ?>
-        <?php if (!empty($row['CDescription'])) { ?>
+    for ($i = $count/2; $i < $count; $i++) {
+        // Process the row
+        $row = $result[$i];
+        if (!empty($row['CDescription'])) { ?>
 
             <tr onClick='toggleRow(this)'>
                 <td id="underlineHeading">
@@ -39,14 +40,14 @@ if(empty($result)){
                 </td>
                 <td >
 
-                        <?php echo $row['CName'];?>
+                    <?php echo $row['CName'];?>
 
                 </td >
 
 
                 <td class='expanded-row-content hide-row' ">
 
-                        <?php echo $row['CDescription'];?>
+                <?php echo $row['CDescription'];?>
 
                 </td>
             </tr>

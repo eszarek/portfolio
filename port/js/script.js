@@ -31,7 +31,7 @@ window.onscroll = () =>{
    });
 
 }
-
+/*
 function toggleButton() {
    var x = document.getElementById("myDIV");
    var btnDisplay = x.style.display;
@@ -44,4 +44,4 @@ function toggleButton() {
       btnButtonName.innerHTML = "Hide Classes"
 
    }
-}
+}*/

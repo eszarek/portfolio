@@ -126,8 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
    <!-- home section ends -->
 
    <!-- about section starts  -->
-
    <section class="about" id="about">
+   <div class="about" id="about">
 
       <h1 class="heading" data-aos="fade-up"> <span>biography</span> </h1>
 
@@ -318,20 +318,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
          </div>
 
       </div>
-
    </section>
+
 
    <!-- about section ends -->
    <!-- classwork section -->
+       <section class="classes" id="classes">
 
-   <section class="myClasses" id="classes">
-       <button onclick="toggleButton()" class="btn" id="classButton">Classes Taken</button>
-       <div id="myDIV" data-aos="fade-down">
+
+           <button  class="btn" id="classButton">Classes Taken</button>
            <div class="box-container">
-               <?php require_once 'myClasses.php' ?>
-           </div>
-       </div>
-   </section>
+               <div id="myDIV" data-aos="fade-down" class="row">
+                   <div class="box-container" id="leftClass">
+                       <?php require_once 'halfClasses.php' ?>
+                   </div>
+                   <div class="box-container" id="rightClass">
+                       <?php require_once 'latterClasses.php' ?>
+                   </div>
+               </div>
+            </div>
+
+       </section>
 
    <!-- Classes ends -->
    <!-- services section starts  -->
@@ -476,5 +483,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
    </script>
 
 </body>
-
+<script>
+    $(document).ready(function () {
+        $('#classButton').click(function () {
+            $('#myDIV').slideToggle('slow', function () {
+            });
+        });
+    });
+</script>
 </html>

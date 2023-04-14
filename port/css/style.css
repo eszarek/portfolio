@@ -249,12 +249,6 @@ section{
    margin-top: 1rem;
 }
 
-.about .skills .progress .bar{
-   margin:1rem auto;
-   max-width: 70rem;
-   border:var(--border-bold);
-   padding:1rem;
-}
 
 .about .skills .progress .bar h3{
    display: flex;
@@ -269,21 +263,7 @@ section{
    font-weight: normal;
 }
 
-.about .skills .progress .bar:nth-child(1) h3{
-   width: 95%;
-}
 
-.about .skills .progress .bar:nth-child(2) h3{
-   width: 80%;
-}
-
-.about .skills .progress .bar:nth-child(3) h3{
-   width: 65%;
-}
-
-.about .skills .progress .bar:nth-child(4) h3{
-   width: 80%;
-}
 
 .about .edu-exp .row{
    display: flex;
@@ -498,12 +478,17 @@ section{
 .github-card__meta > i {
    font-size: 16px;
 }
-/* classes collapseable */
+/* classes collapsable */
 
+.classes .box-container{
+   display: inline-block;
+
+}
 #myDIV{
    display: none;
 }
 table {
+   display: inline-block;
    width: 500px;
    border: none;
    border-top: 1px solid #EEEEEE;
@@ -542,7 +527,7 @@ tr:hover {
 }
 .expanded-row-content {
    border-top: none;
-   display: grid;
+   display: grid inline;
    grid-column: 1/-1;
    justify-content: flex-start;
    color: #282828;
@@ -553,7 +538,18 @@ tr:hover {
 .hide-row {
    display: none;
 }
-/* table
+#leftClass{
+   position: relative;
+   display:inline-block;
+   float: left;
+}
+#rightClass{
+   display:inline-block;
+   position: relative;
+   float: right;
+}/*
+
+ table
 .myClasses > table {
    width: 100%;
    padding: 1.25rem;
