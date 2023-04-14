@@ -39,12 +39,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
    <!-- aos css link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom css file link  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/github-repo-cards@1.0.9/app.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/background.css">
-    <script src="https://cdn.jsdelivr.net/npm/github-repo-cards@1.0.9/app.js" defer></script>
 
 
 </head>
@@ -272,6 +276,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
             </div>
 
+
+
+
             <div class="box-container">
 
                <h3 class="title" data-aos="fade-left">Experience</h3>
@@ -315,7 +322,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
    </section>
 
    <!-- about section ends -->
+   <!-- classwork section -->
 
+   <section class="myClasses" id="classes">
+       <button onclick="toggleButton()" class="btn" id="classButton">Classes Taken</button>
+       <div id="myDIV" data-aos="fade-down">
+           <div class="box-container">
+               <?php require_once 'myClasses.php' ?>
+           </div>
+       </div>
+   </section>
+
+   <!-- Classes ends -->
    <!-- services section starts  -->
 
    <section class="services" id="services">
@@ -426,6 +444,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
    </section>
 
+
    <!-- contact section ends -->
 
    <div class="credit"> &copy; copyright @
@@ -437,20 +456,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 
-
-
-
-
-
-
-
-
-
    <!-- custom js file link  -->
    <script src="js/script.js"></script>
-
+   <script>
+       const toggleRow = (element) => {
+           element.getElementsByClassName('expanded-row-content')[0].classList.toggle('hide-row');
+           console.log(event);
+       }
+   </script>
    <!-- aos js link  -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 
    <script>
       AOS.init({

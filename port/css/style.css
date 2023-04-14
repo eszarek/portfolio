@@ -498,9 +498,101 @@ section{
 .github-card__meta > i {
    font-size: 16px;
 }
+/* classes collapseable */
 
+#myDIV{
+   display: none;
+}
+table {
+   width: 500px;
+   border: none;
+   border-top: 1px solid #EEEEEE;
+   border-collapse: collapse;
+}
 
+td,
+th {
+   border: 1px solid #EEEEEE;
+   border-top: none;
+   text-align: left;
+   padding: 8px;
+   color: #363D41;
+   font-size: 14px;
+}
 
+tr {
+   background-color: #fff;
+   border: none;
+   cursor: pointer;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: flex-start;
+}
+
+tr:first-child:hover {
+   cursor: default;
+   background-color: #fff;
+}
+
+tr:hover {
+   background-color: #EEF4FD;
+}
+#underlineHeading{
+   text-decoration: underline;
+}
+.expanded-row-content {
+   border-top: none;
+   display: grid;
+   grid-column: 1/-1;
+   justify-content: flex-start;
+   color: #282828;
+   font-size: 13px;
+   background-color: #fff;
+}
+
+.hide-row {
+   display: none;
+}
+/* table
+.myClasses > table {
+   width: 100%;
+   padding: 1.25rem;
+   font-size: 16px;
+
+}
+.myClasses > table > a{
+   text-decoration: none;
+}
+
+.collapsible-section-header {
+   background-color: #eeeeee;
+   display: flex;
+
+}
+
+.collapsible-section-header > a {
+
+   font-weight: 700;
+
+}
+
+.collapse-down > a:after {
+   content: "▼";
+   padding-left: 0.5em;
+   text-decoration: none;
+}
+
+.collapse-down > a.collapsed:after {
+   content: "▼";
+   padding-left: 0.5em;
+   text-decoration: none;
+}
+
+.myClasses > tbody > td {
+   background-color: #eeeeee;
+   padding: 1.25rem;
+}
+*/
 
 /* media queries  */
 
@@ -548,3 +640,4 @@ section{
    }
 
 }
+

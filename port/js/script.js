@@ -31,3 +31,17 @@ window.onscroll = () =>{
    });
 
 }
+
+function toggleButton() {
+   var x = document.getElementById("myDIV");
+   var btnDisplay = x.style.display;
+   var btnButtonName = document.getElementById("classButton")
+   if (btnDisplay === "block") {
+      x.style.display = "none";
+      btnButtonName.innerHTML = "Show Classes"
+   } else {
+      x.style.display = "block";
+      btnButtonName.innerHTML = "Hide Classes"
+
+   }
+}
