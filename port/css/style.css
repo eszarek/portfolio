@@ -304,7 +304,10 @@ section{
    font-size: 1.7rem;
    line-height: 2;
 }
-
+#merit{
+   margin-top: 1.5rem;
+   margin-bottom: 1rem;
+}
 .services .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -482,6 +485,8 @@ section{
 
 .classes .box-container{
    display: inline-block;
+   margin:1.5rem 0;
+   padding:2rem;
 
 }
 #myDIV{
@@ -540,55 +545,16 @@ tr:hover {
 }
 #leftClass{
    position: relative;
-   display:inline-block;
+   display:inline-flex;
+
    float: left;
 }
 #rightClass{
-   display:inline-block;
+   display:inline-flex;
    position: relative;
    float: right;
-}/*
-
- table
-.myClasses > table {
-   width: 100%;
-   padding: 1.25rem;
-   font-size: 16px;
-
-}
-.myClasses > table > a{
-   text-decoration: none;
 }
 
-.collapsible-section-header {
-   background-color: #eeeeee;
-   display: flex;
-
-}
-
-.collapsible-section-header > a {
-
-   font-weight: 700;
-
-}
-
-.collapse-down > a:after {
-   content: "▼";
-   padding-left: 0.5em;
-   text-decoration: none;
-}
-
-.collapse-down > a.collapsed:after {
-   content: "▼";
-   padding-left: 0.5em;
-   text-decoration: none;
-}
-
-.myClasses > tbody > td {
-   background-color: #eeeeee;
-   padding: 1.25rem;
-}
-*/
 
 /* media queries  */
 
